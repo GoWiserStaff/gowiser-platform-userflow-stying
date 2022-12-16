@@ -1,146 +1,211 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>GoWiser</title>
-</head>
-<body>
-	<div class="container">
-		<div>
-			<p style="color: white;" id="testCounter">0</p>
-		</div>
-		<div class="logo">
-			<img src="https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/GoWiser-logo-H-bl%C3%A5-hvid.svg" alt="" onclick="add()">
-		</div>
-		<div id="api"></div>
-	</div>
-	<style>
-			@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-			@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-			
-			h1, h2, h3, h4, h5, h6 {
-				color: white;
-				text-align: center;
-				font-family: "Montserrat", "Arial", sans-serif;
-			}
-			h1{
-				font-weight: 400
-			}
-			html{
-				background: radial-gradient(at center center, #83c8e3, #1c5870);
-				height: 100%;
-				width: 100%;
-			}
-			body{
-				font-family: "Lato", "Arial", sans-serif;
-			}
-			.container{
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				background-color:#10272E;
-				border-radius: 10px;
-				border: white 3px solid;
-				width: 95%;
-				max-width: 500px;
-				max-height: 600px;
-			}
-			.logo{
-				width: 7rem;
-				height: 3rem;
-				margin: 1rem;
-			}
-			.heading{
-				margin-top: -1rem;
-			}
-			.intro h2 {
-				text-align: center;
-			}
-			.claims-provider-list-buttons .options{
-				margin-inline: 2.5rem;
-			}
-			.entry {
-				margin-inline: 2.5rem;
-			}
-			.divider {
-				text-align: center;
-				font-size: 0;
-				border-width: 2px;
-				border-color: #38A6D3;
-				border-style: solid;
-				margin-block: 1.5rem;
-				max-width: 300px;
-				margin-inline: auto;
-			}
-			.create {
-				width: 400px ;
-				margin-left: auto ;
-				margin-right: auto ;
-			}
-			button {
-				margin-block: .25rem;
-				border-style: solid;
-				border-width: 1px;
-				border-radius: 5px;
-				border-color: white !important;
-				padding-inline: .75rem;
-				padding-block: .5rem;
-				color: white !important;
-				transition: all 100ms ease-in-out;
-				background-color:  transparent !important;
-			}
-			button:hover{
-				background-color: #38A6D3 !important;
-				color: black !important;
-				border-color: #38A6D3 !important;
-			}
-			.accountButton{
-				width: 100%;
-			}
-			.buttons{
-				margin-block: .5rem;
-			}
-			#localAccountForm{
-				width: 100%;
-			}
-			.localAccount .intro h2{
-				display: none;
-			}
-			.social .intro h2{
-				display: none;
-			}
-			.entry-item{
-				position: relative;
-			}
-			label{
-				color: white;
-				display: inline-block;
-				margin-bottom: .25rem;
-			}
-			input{
-				border-radius: 3px;
-				width: 100%;
-				display: block;
-				background-color: white;
-				border-style: none;
-				/* padding-inline: .5rem; */
-				padding-block: .5rem;
-			}
-			#forgotPassword{
-				position: absolute;
-				right: 0;
-				bottom: -2.25rem;
-				display: inline;
-				color: #38A6D3;
-			}
-	</style>
-	<script>
-		let counter = 0;
 
-		const add = () => {
-			counter++;
-			document.getElementById('testCounter').innerText = counter;
+<head>
+	<title>GoWiser</title>
+</head>
+
+<body>
+	<section class="container">
+		<aside class="logo">
+			<img
+				src="https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/GoWiser-logo-Reshape-bl%C3%A5-hvid.svg">
+				<a class="readMore" href="https://welcome.gowiser.com">Read More</a>
+			</aside>
+		<main class="content">
+			<div id="api"></div>
+		</main>
+	</section>
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+		@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: white;
+			text-align: center;
+			font-family: "Montserrat", "Arial", sans-serif;
 		}
-	</script>
+
+		h1 {
+			font-weight: 400
+		}
+
+		html {
+			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/GoWiser-bg.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+		}
+
+		body {
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			font-family: "Lato", "Arial", sans-serif;
+		}
+
+		.container {
+			position: relative;
+			display: flex;
+			flex-flow: row wrap;
+			top: 50%;
+			margin: 0 auto;
+			transform: translateY(-50%);
+			box-shadow: #00000099 1px 1px 1px 1px;
+			width: 80%;
+			height: 100%;
+			max-width: 1400px;
+			max-height: 600px;
+		}
+
+		.logo {
+			position: relative;
+			display: block;
+			flex-shrink: 3;
+			flex-grow: 1;
+			width: 40%;
+			height: 100%;
+			background-color: #303031;
+		}
+
+		.logo img {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			padding: 60px;
+			width: -webkit-fill-available;
+			height: 80%;
+		}
+
+		.readMore {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			margin: 5px;
+			color: white;
+			text-decoration: none;
+		}
+
+		.readMore:hover {
+			text-decoration: underline;
+		}
+
+		.content {
+			display: block;
+			flex-grow: 2;
+			flex-wrap: 1;
+			width: 60%;
+			height: 100%;
+			background-color: #ffffff;
+		}
+
+		.heading {
+			margin-top: -1rem;
+		}
+
+		.intro h2 {
+			text-align: center;
+		}
+
+		.claims-provider-list-buttons .options {
+			margin-inline: 2.5rem;
+		}
+
+		.entry {
+			margin-inline: 2.5rem;
+		}
+
+		.divider {
+			text-align: center;
+			font-size: 0;
+			border-width: 2px;
+			border-color: #38A6D3;
+			border-style: solid;
+			margin-block: 1.5rem;
+			max-width: 300px;
+			margin-inline: auto;
+		}
+
+		.create {
+			width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		button {
+			margin-block: .25rem;
+			border-style: solid;
+			border-width: 1px;
+			border-radius: 5px;
+			border-color: white !important;
+			padding-inline: .75rem;
+			padding-block: .5rem;
+			color: white !important;
+			transition: all 100ms ease-in-out;
+			background-color: transparent !important;
+		}
+
+		button:hover {
+			background-color: #38A6D3 !important;
+			color: black !important;
+			border-color: #38A6D3 !important;
+		}
+
+		.accountButton {
+			width: 100%;
+		}
+
+		.buttons {
+			margin-block: .5rem;
+		}
+
+		#localAccountForm {
+			width: 100%;
+		}
+
+		.localAccount .intro h2 {
+			display: none;
+		}
+
+		.social .intro h2 {
+			display: none;
+		}
+
+		.entry-item {
+			position: relative;
+		}
+
+		label {
+			color: white;
+			display: inline-block;
+			margin-bottom: .25rem;
+		}
+
+		input {
+			border-radius: 3px;
+			width: 100%;
+			display: block;
+			background-color: white;
+			border-style: none;
+			/* padding-inline: .5rem; */
+			padding-block: .5rem;
+		}
+
+		#forgotPassword {
+			position: absolute;
+			right: 0;
+			bottom: -2.25rem;
+			display: inline;
+			color: #38A6D3;
+		}
+	</style>
 </body>
+
 </html>
