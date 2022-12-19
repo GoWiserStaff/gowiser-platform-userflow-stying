@@ -30,6 +30,63 @@
 		</aside>
 		<main class="loginBox">
 			<div id="api">
+				<div class="heading">
+				  <h1 role="heading">Sign in</h1>
+				</div>
+				  <div class="claims-provider-list-buttons social" aria-label="Sign in with your social account" role="form">
+					<div class="intro">
+					  <h2 aria-level="1">Sign in with your social account</h2>
+					</div>
+					<div class="options">
+						<div>
+							<button class="accountButton firstButton claims-provider-selection" id="GowiserAzureAD" role="link" autofocus="">Gowiser Azure AD</button>
+						</div>
+									<div>
+							<button class="accountButton claims-provider-selection" id="GoogleExchange" role="link">Google</button>
+						</div>
+								</div>
+				  </div>
+		  
+				  <div class="divider">
+					<h2>OR</h2>
+				  </div>
+				<form id="localAccountForm" action="JavaScript:void(0);" class="localAccount" aria-label="Sign in with your email address">
+				  <div class="intro">
+					<h2 aria-level="1">
+					  Sign in with your email address
+					</h2>
+				  </div>
+				  <div class="error pageLevel" aria-hidden="true" role="alert" style="display: none;">
+					<p></p>
+				  </div>
+				  <div class="entry">
+					<div class="entry-item">
+					  <label for="email">
+						Email Address
+					  </label>
+					  <div class="error itemLevel" aria-hidden="true" role="alert" style="display: none;">
+						<p></p>
+					  </div>
+					  <input type="email" id="email" name="Email Address" title="Please enter a valid Email Address" pattern="^[a-zA-Z0-9!#$%&amp;'+^_`{}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'+^_`{}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$" autofocus="" placeholder="Email Address" aria-label="Email Address">
+					</div>
+					  <div class="entry-item">
+						<div class="password-label">
+						  <label for="password">Password</label>
+							  <a id="forgotPassword" href="/gowiserlogin.onmicrosoft.com/B2C_1_test-login/api/CombinedSigninAndSignup/forgotPassword?csrf_token=M1gwK28zS3padFhPOXZ6QTEvSW5iS0JxZTNzaWQzTVNWOFlNbVlwNy96M0wzQzE5SUtWNEc1R3dqc0hwOWttQlNJUGZFWWJKU1lWeHpHbTBpdHVjK3c9PTsyMDIyLTEyLTE5VDE1OjA0OjMyLjc3NTc2NDRaO2l2MCswRkJVWG9lenZybGQvVVdzdHc9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiIzNWE0YmE1YS0xNTc3LTQ4YTItOWZmOS00MjVkYzZmNWE3M2QifQ&amp;p=B2C_1_test-login">Forgot your password?</a>
+										</div>
+						<div class="error itemLevel" aria-hidden="true" style="display: none;">
+						  <p role="alert"></p>
+						</div>
+						<input type="password" id="password" name="Password" placeholder="Password" aria-label="Password" autocomplete="current-password" aria-required="true">
+									</div>
+					<div class="working"></div>
+		  
+		  
+					<div class="buttons">
+					  <button id="next" type="submit" form="localAccountForm">Sign in</button>
+					</div>
+				  </div>
+				</form>
 			</div>
 		</main>
 	</section>
@@ -157,7 +214,7 @@
 
 		}
 
-		.content {
+		#api {
 			position: absolute;
 			width: 500px;
 			margin: 0 auto;
