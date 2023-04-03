@@ -180,6 +180,7 @@
 			height: clamp(1.25rem, 0.75rem + 0.8vw, 1.5rem);
 			user-select: none;
 			margin-bottom: clamp(0.3875rem, -0.2375rem + 1vw, 0.7rem);
+			filter: brightness(0) invert(1);
 		}
 
 		.logoBox p {
@@ -229,7 +230,7 @@
 
 		footer {
 			position: relative;
-			top: -40px;
+			top: -20px;
 			order: 3;
 			display: none;
 			text-align: center;
@@ -269,11 +270,11 @@
 
 		#api {
 			position: absolute;
-			width: 500px;
+			width: 450px;
 			margin: 0 auto;
-			box-shadow: #00000099 1px 1px 1px 1px;
+			box-shadow: #00000099 0px 12px 3px -10px;
 			background-color: #ffffff;
-			padding: 35px 20px;
+			padding: 30px 0px;
 			border-radius: 10px;
 			top: 50%;
 			left: 50%;
@@ -312,6 +313,11 @@
 			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/Google-logo-White.png');
 		}
 
+		.social {
+			position: relative;
+			margin-bottom: 2.5rem;
+		}
+
 		.social .intro {
 			margin-top: -1rem;
 			padding: 10px 0px;
@@ -347,7 +353,7 @@
 			border-style: solid;
 			margin-block: 1.5rem;
 			max-width: 400px;
-			width: 60%;
+			width: 75%;
 			margin-inline: auto;
 			height: 0;
 		}
@@ -376,6 +382,7 @@
 			border-radius: 5px;
 			border: none;
 			width: 100%;
+			margin: 10px 0px;
 			background-color: #38A6D3;
 			cursor: pointer;
 			color: white;
@@ -392,7 +399,7 @@
 
 		.accountButton {
 			background-color: transparent;
-			margin: 5px 0px;
+			margin: 7px 0px;
 			border: 1px solid black;
 			color: black;
 			font-weight: normal;
@@ -414,6 +421,11 @@
 
 		#localAccountForm {
 			width: 100%;
+		}
+
+		.localAccount {
+			position: relative;
+			margin-top: 2.5rem;
 		}
 
 		.localAccount .intro h2 {
@@ -450,6 +462,7 @@
 			display: block;
 			background-color: white;
 			border: none;
+			margin: 14px 0;
 			border-bottom: 1px solid black;
 			/* border-radius: 5px; */
 			/* border-left: 0px;
@@ -466,7 +479,7 @@
 		    background-size: 14px;
 		    background-position: -24px;
 		    background-origin: content-box;
-			margin-bottom: 10px;
+			margin-bottom: 7px;
 		}
 
 		input[type="password"] {
