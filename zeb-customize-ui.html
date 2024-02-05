@@ -86,7 +86,7 @@
 								aria-label="Password" autocomplete="current-password" aria-required="true">
 						</div>
 						<div class="working" style="display: block;">
-							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4V2A10 10 0 0 0 2 12h2a8 8 0 0 1 8-8Z"/></svg>
+							<!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4V2A10 10 0 0 0 2 12h2a8 8 0 0 1 8-8Z"/></svg> -->
 						</div>
 						<div class="buttons">
 							<button id="next" type="submit" form="localAccountForm">Sign in</button>
@@ -249,6 +249,12 @@
 			position: absolute;
 			color: white;
 			pointer-events: none;
+			height: 32px;
+			width: 32px;
+			animation: spin 1s linear infinite;
+			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/MdiLoading.svg');
+			background-repeat: no-repeat;
+			background-size: 32px;
 		}
 
 		.working svg {
@@ -283,6 +289,13 @@
 			color: white;
 			text-decoration: none;
 			transition: all 100ms;
+		}
+
+		.itemLevel {
+			padding: 0px 45px;
+			color: red;
+			text-shadow: 0 0 1px #00000057;
+			animation: login_error 0.4s 1 linear;
 		}
 
 		footer a:hover {
@@ -538,10 +551,6 @@
 
 		.highlightError::placeholder {
 			color: red;
-		}
-
-		.error {
-			display: none !important;
 		}
 
 		#forgotPassword {
