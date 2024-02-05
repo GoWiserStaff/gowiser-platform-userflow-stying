@@ -30,61 +30,70 @@
 		</div>
 		<main class="loginBox">
 			<div id="api" data-name="Unified">
-				<div class="claims-provider-list-buttons social" aria-label="Sign in with your social account" role="form">
-				  <div class="intro">
-					<h2 aria-level="1">Sign in with your social account</h2>
-				  </div>
-				  <div class="options">
-					  <div>
-						  <button class="accountButton firstButton claims-provider-selection" id="AzureADCommonExchange" role="link" autofocus="">Microsoft Login</button>
-					  </div>
-								  <div>
-						  <button class="accountButton claims-provider-selection" id="GoogleExchange" role="link">Google</button>
-					  </div>
-							  </div>
-				</div>
-		
-				<div class="divider">
-				  <h2>OR</h2>
-				</div>
-			  <form id="localAccountForm" action="JavaScript:void(0);" class="localAccount" aria-label="Sign in with your email address">
-				<div class="intro">
-				  <h2 aria-level="1">
-					Sign in with your email address
-				  </h2>
-				</div>
-				<div class="error pageLevel" aria-hidden="true" role="alert" style="display: none;">
-				  <p></p>
-				</div>
-				<div class="entry">
-				  <div class="entry-item">
-					<label for="signInName">
-					  Email Address
-					</label>
-					<div class="error itemLevel" aria-hidden="false" role="alert" style="display: block;">
-					  <p>Please enter your Email Address</p>
+				<div class="claims-provider-list-buttons social" aria-label="Sign in with your social account"
+					role="form">
+					<div class="intro">
+						<h2 aria-level="1">Sign in with your social account</h2>
 					</div>
-					<input type="text" id="signInName" name="Email Address" title="Please enter a valid Email Address" autofocus="" placeholder="Email Address" aria-label="Email Address">
-				  </div>
-					<div class="entry-item">
-					  <div class="password-label">
-						<label for="password">Password</label>
-							<a id="forgotPassword" href="/a49a92a1-c7d4-4da9-93c3-2c2a4adda85f/B2C_1A_signup_signin/api/CombinedSigninAndSignup/forgotPassword?csrf_token=ZkI2TlVoWEgwcjJqUGF5a25FcHBwYWRERXRGUGx5SDJFWXpQUUZ1ZldkOVRyeFdPVGNZTHZXZ1lsU3Y4SWVMN2cvYW4wT1pYc1VWbFBtbWtBSi9JVnc9PTsyMDIyLTEyLTIxVDA5OjEyOjA2LjcyNjYwOTJaOzBhb0tVU1czbld6VUJMT2RoMmxUS0E9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiI2Nzc3NzcyZC1lZmRjLTQzZjctOTdkYy0wMmY0ZjVmODA5MDAifQ&amp;p=B2C_1A_signup_signin">Forgot your password?</a>
-									  </div>
-					  <div class="error itemLevel" aria-hidden="false" style="display: block;">
-						<p role="alert">Please enter your password</p>
-					  </div>
-					  <input type="password" id="password" name="Password" placeholder="Password" aria-label="Password" autocomplete="current-password" aria-required="true">
-								  </div>
-				  <div class="working"></div>
-		
-		
-				  <div class="buttons">
-					<button id="next" type="submit" form="localAccountForm">Sign in</button>
-				  </div>
+					<div class="options">
+						<div>
+							<button class="accountButton firstButton claims-provider-selection"
+								id="AzureADCommonExchange" role="link" autofocus="">Microsoft Login</button>
+						</div>
+						<div>
+							<button class="accountButton claims-provider-selection" id="GoogleExchange"
+								role="link">Google</button>
+						</div>
+					</div>
 				</div>
-			  </form>
-		  </div>
+
+				<div class="divider">
+					<h2>OR</h2>
+				</div>
+				<form id="localAccountForm" action="JavaScript:void(0);" class="localAccount"
+					aria-label="Sign in with your email address">
+					<div class="intro">
+						<h2 aria-level="1">
+							Sign in with your email address
+						</h2>
+					</div>
+					<div class="pageLevel" aria-hidden="true" role="alert" style="display: block;">
+						<p></p>
+					</div>
+					<div class="entry">
+						<div class="entry-item">
+							<label for="signInName">
+								Email Address
+							</label>
+							<div class="error itemLevel" aria-hidden="false" role="alert" style="display: block;">
+								<p>Please enter your Email Address</p>
+							</div>
+							<input type="text" id="signInName" name="Email Address"
+								title="Please enter a valid Email Address" autofocus="" placeholder="Email Address"
+								aria-label="Email Address">
+						</div>
+						<div class="entry-item">
+							<div class="password-label">
+								<label for="password">Password</label>
+								<a id="forgotPassword"
+									href="/a49a92a1-c7d4-4da9-93c3-2c2a4adda85f/B2C_1A_signup_signin/api/CombinedSigninAndSignup/forgotPassword?csrf_token=ZkI2TlVoWEgwcjJqUGF5a25FcHBwYWRERXRGUGx5SDJFWXpQUUZ1ZldkOVRyeFdPVGNZTHZXZ1lsU3Y4SWVMN2cvYW4wT1pYc1VWbFBtbWtBSi9JVnc9PTsyMDIyLTEyLTIxVDA5OjEyOjA2LjcyNjYwOTJaOzBhb0tVU1czbld6VUJMT2RoMmxUS0E9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiI2Nzc3NzcyZC1lZmRjLTQzZjctOTdkYy0wMmY0ZjVmODA5MDAifQ&amp;p=B2C_1A_signup_signin">Forgot
+									your password?</a>
+							</div>
+							<div class="error itemLevel" aria-hidden="false" style="display: block;">
+								<p role="alert">Please enter your password</p>
+							</div>
+							<input type="password" id="password" name="Password" placeholder="Password"
+								aria-label="Password" autocomplete="current-password" aria-required="true">
+						</div>
+						<div class="working" style="display: block;">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4V2A10 10 0 0 0 2 12h2a8 8 0 0 1 8-8Z"/></svg>
+						</div>
+						<div class="buttons">
+							<button id="next" type="submit" form="localAccountForm">Sign in</button>
+						</div>
+					</div>
+				</form>
+			</div>
 		</main>
 		<footer>
 			<h2><span>Reshape</span> The Future Of Audit.</h2>
@@ -228,6 +237,24 @@
 
 		}
 
+		.pageLevel {
+			padding: 0px 45px;
+			color: red;
+			text-shadow: 0 0 1px #00000057;
+			animation: login_error 0.4s 1 linear;
+		}
+
+		.working {
+			margin: 11px;
+			position: absolute;
+			color: white;
+			pointer-events: none;
+		}
+
+		.working svg {
+			animation: spin 1s linear infinite;
+		}
+
 		footer {
 			position: relative;
 			top: -20px;
@@ -291,7 +318,8 @@
 		}
 
 		#GowiserAzureAD:hover,
-		#AzureADCommonExchange:hover, #AzureADCommonExchange:focus {
+		#AzureADCommonExchange:hover,
+		#AzureADCommonExchange:focus {
 			color: white;
 			outline: none;
 			border-color: #0179D4;
@@ -307,7 +335,8 @@
 			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/Google-logo.png');
 		}
 
-		#GoogleExchange:hover, #GoogleExchange:focus {
+		#GoogleExchange:hover,
+		#GoogleExchange:focus {
 			color: white;
 			outline: none;
 			border-color: #C64A29;
@@ -474,22 +503,22 @@
 			padding-block: .5rem;
 			padding-left: 30px;
 		}
-		
+
 		input[type="text"] {
 			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/CarbonUserFilled.svg');
 			background-repeat: no-repeat;
-		    background-size: 14px;
-		    background-position: -24px;
-		    background-origin: content-box;
+			background-size: 14px;
+			background-position: -24px;
+			background-origin: content-box;
 			margin-bottom: 7px;
 		}
 
 		input[type="password"] {
 			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/CarbonLockedFilled.svg');
 			background-repeat: no-repeat;
-		    background-size: 14px;
-		    background-position: -24px;
-		    background-origin: content-box;
+			background-size: 14px;
+			background-position: -24px;
+			background-origin: content-box;
 			margin-bottom: 30px;
 		}
 
@@ -520,13 +549,24 @@
 			font-size: 14px;
 			bottom: -20px;
 			right: 0px;
-			display: none; /*inline*/
+			display: none;
+			/*inline*/
 			text-decoration: none;
 			color: #38A6D3;
 		}
 
 		#forgetPassword:hover {
 			color: #2A82A5;
+		}
+
+		@keyframes spin {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
 		}
 
 		@keyframes login_error {
@@ -549,7 +589,7 @@
 			80% {
 				transform: translateX(-5%);
 			}
-			
+
 			100% {
 				transform: translateX(0%);
 			}
