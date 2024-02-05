@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>GoWiser</title>
+</head>
+
+<body>
+	<div class="bg-covor"></div>
+	<nav class="logo">
+		<a href="https://welcome.gowiser.com">
+			<img src="https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/GoWiser-logo-H-blå-hvid.svg"
+				alt="">
+		</a>
+	</nav>
+	<section class="container">
+		<div class="logoBox">
+			<div>
+				<img src="https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/GoWiser-logo-text.svg"
+					alt="">
+				<p>
+					Reshape
+					<br>
+					The Future
+					<br>
+					Of Audit.
+				</p>
+				<a class="readMore" href="https://welcome.gowiser.com/">Read More</a>
+			</div>
+		</div>
+		<main class="loginBox">
+			Error Besked
+		</main>
+		<footer>
+			<h2><span>Reshape</span> The Future Of Audit.</h2>
+			<a href="https://welcome.gowiser.com">Read More</a>
+		</footer>
+	</section>
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+		@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+		@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			text-align: center;
+			font-family: "Montserrat", "Arial", sans-serif;
+		}
+
+		h1 {
+			font-weight: 400
+		}
+
+		html {
+			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/GoWiser-bg-2.webp');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+		}
+
+		body {
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			font-family: "Lato", "Arial", sans-serif;
+		}
+
+		.bg-covor {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			background-color: rgb(0, 0, 0, 35%);
+		}
+
+		.logo {
+			position: absolute;
+			margin: 27px 40px;
+			height: clamp(1.875rem, 1.4732rem + 2.1429vw, 2.8125rem);
+		}
+
+		.logo img {
+			height: 100%;
+		}
+
+		.container {
+			position: relative;
+			display: flex;
+			flex-flow: row wrap;
+			top: 50%;
+			margin: 0 auto;
+			transform: translateY(-50%);
+			width: 90%;
+			height: 100%;
+			max-width: 1400px;
+			max-height: 600px;
+		}
+
+		.logoBox {
+			position: relative;
+			display: block;
+			flex-shrink: 3;
+			order: 1;
+			flex-grow: 1;
+			width: 40%;
+			height: 100%;
+		}
+
+		.logoBox div {
+			position: relative;
+			height: max-content;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		.logoBox img {
+			position: relative;
+			height: clamp(1.25rem, 0.75rem + 0.8vw, 1.5rem);
+			user-select: none;
+			margin-bottom: clamp(0.3875rem, -0.2375rem + 1vw, 0.7rem);
+			filter: brightness(0) invert(1);
+		}
+
+		.logoBox p {
+			text-align: left;
+			font-family: 'Inter Tight', sans-serif;
+			font-size: clamp(4rem, -1.125rem + 8.2vw, 6.5625rem);
+			font-weight: 700;
+			margin: 0;
+			line-height: clamp(4.40625rem, -1.2188rem + 9vw, 7.21875rem);
+			user-select: none;
+			letter-spacing: -2.1px;
+			color: rgb(255, 255, 255);
+		}
+
+		.logoBox a {
+			position: relative;
+			top: 20px;
+			border: solid 2px white;
+			border-radius: 10px;
+			padding: 8px 16px;
+			font-size: clamp(0.75rem, 0.25rem + 0.8vw, 1rem);
+			color: white;
+			text-decoration: none;
+			transition: all 100ms;
+		}
+
+		.logoBox a:hover {
+			background-color: #38A6D3;
+			border-color: #38A6D3;
+		}
+
+		.logoBox a:active {
+			background-color: #2a82a5;
+			border-color: #2a82a5;
+		}
+
+		.loginBox {
+			position: relative;
+			display: block;
+			flex-grow: 2;
+			flex-wrap: 1;
+			order: 2;
+			width: 60%;
+			height: 100%;
+
+		}
+
+		footer {
+			position: relative;
+			top: -20px;
+			order: 3;
+			display: none;
+			text-align: center;
+		}
+
+		footer h2 {
+			margin: 0;
+			font-family: 'Inter Tight', sans-serif;
+			color: rgb(255, 255, 255);
+		}
+
+		footer span {
+			color: white;
+		}
+
+		footer a {
+			position: relative;
+			top: 20px;
+			border: solid 2px white;
+			border-radius: 10px;
+			padding: 8px 16px;
+			font-size: clamp(0.75rem, 0.25rem + 0.8vw, 1rem);
+			color: white;
+			text-decoration: none;
+			transition: all 100ms;
+		}
+
+		footer a:hover {
+			background-color: #38A6D3;
+			border-color: #38A6D3;
+		}
+
+		footer a:active {
+			background-color: #2a82a5;
+			border-color: #2a82a5;
+		}
+
+		#api {
+			position: absolute;
+			width: 450px;
+			margin: 0 auto;
+			box-shadow: #00000099 0px 12px 3px -10px;
+			background-color: #ffffff;
+			padding: 30px 0px;
+			border-radius: 10px;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+
+		#GowiserAzureAD,
+		#AzureADCommonExchange {
+			background-repeat: no-repeat;
+			background-size: 25px;
+			background-position: -5px;
+			background-origin: content-box;
+			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/MS-logo.png');
+		}
+
+		#GowiserAzureAD:hover,
+		#AzureADCommonExchange:hover, #AzureADCommonExchange:focus {
+			color: white;
+			outline: none;
+			border-color: #0179D4;
+			background-color: #0179D4;
+			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/MS-logo-White.png');
+		}
+
+		#GoogleExchange {
+			background-repeat: no-repeat;
+			background-size: 25px;
+			background-position: -5px;
+			background-origin: content-box;
+			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/Google-logo.png');
+		}
+
+		#GoogleExchange:hover, #GoogleExchange:focus {
+			color: white;
+			outline: none;
+			border-color: #C64A29;
+			background-color: #C64A29;
+			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/Google-logo-White.png');
+		}
+
+		.social {
+			position: relative;
+			margin-bottom: 2.5rem;
+		}
+
+		.social .intro {
+			margin-top: -1rem;
+			padding: 10px 0px;
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.social .intro::after {
+			content: "Sign in with your company account";
+		}
+
+		.social .intro h1 {
+			display: none;
+		}
+
+		.intro h2 {
+			text-align: center;
+		}
+
+		.claims-provider-list-buttons .options {
+			margin-inline: 2.5rem;
+		}
+
+		.entry {
+			margin-inline: 2.5rem;
+		}
+
+		.divider {
+			text-align: center;
+			border-width: 0.5px;
+			background-color: black;
+			border-style: solid;
+			margin-block: 1.5rem;
+			max-width: 400px;
+			width: 75%;
+			margin-inline: auto;
+			height: 0;
+		}
+
+		.divider h2 {
+			position: relative;
+			font-size: 16px;
+			width: fit-content;
+			padding: 0px 5px;
+			margin: 0 auto;
+			transform: translateY(-50%);
+			background-color: white;
+		}
+
+		.create {
+			width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		button {
+			padding-inline: .75rem;
+			padding-block: .5rem;
+			font-size: 16px;
+			font-weight: bold;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			margin: 10px 0px;
+			background-color: #38A6D3;
+			cursor: pointer;
+			color: white;
+			transition: all 100ms ease-in-out;
+		}
+
+		button:hover {
+			background-color: #2a82a5;
+		}
+
+		button:active {
+			background-color: #38A6D3;
+		}
+
+		.accountButton {
+			background-color: transparent;
+			margin: 7px 0px;
+			border: 1px solid black;
+			color: black;
+			font-weight: normal;
+			width: 100%;
+			cursor: pointer;
+		}
+
+		.accountButton:hover {
+			background-color: #dddddf;
+		}
+
+		.accountButton:active {
+			background-color: #cbcbcc;
+		}
+
+		.buttons {
+			margin-block: .5rem;
+		}
+
+		#localAccountForm {
+			width: 100%;
+		}
+
+		.localAccount {
+			position: relative;
+			margin-top: 2.5rem;
+		}
+
+		.localAccount .intro h2 {
+			display: none;
+		}
+
+		.social .intro h2 {
+			display: none;
+		}
+
+		.entry-item {
+			position: relative;
+		}
+
+		label {
+			color: black;
+			display: inline-block;
+			margin-left: 2px;
+			margin-bottom: .25rem;
+		}
+
+		.entry-item label {
+			display: none;
+		}
+
+		.password-label label {
+			display: none;
+		}
+
+		input {
+			box-sizing: border-box;
+			font-size: 16px;
+			width: 100%;
+			display: block;
+			background-color: white;
+			border: none;
+			margin: 14px 0;
+			border-bottom: 1px solid black;
+			/* border-radius: 5px; */
+			/* border-left: 0px;
+			border-color: black;
+			border-width: 1px;
+			border-style: solid; */
+			padding-block: .5rem;
+			padding-left: 30px;
+		}
+		
+		input[type="text"] {
+			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/CarbonUserFilled.svg');
+			background-repeat: no-repeat;
+		    background-size: 14px;
+		    background-position: -24px;
+		    background-origin: content-box;
+			margin-bottom: 7px;
+		}
+
+		input[type="password"] {
+			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/CarbonLockedFilled.svg');
+			background-repeat: no-repeat;
+		    background-size: 14px;
+		    background-position: -24px;
+		    background-origin: content-box;
+			margin-bottom: 30px;
+		}
+
+		.highlightError[type="text"] {
+			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/CarbonUserFilled-Red.svg');
+		}
+
+		.highlightError[type="password"] {
+			background-image: url('https://raw.githubusercontent.com/GoWiserStaff/gowiser-platform-userflow-stying/main/CarbonLockedFilled-Red.svg');
+		}
+
+		.highlightError {
+			border-color: red;
+			border-width: 1.5px;
+			animation: login_error 0.4s 1 linear;
+		}
+
+		.highlightError::placeholder {
+			color: red;
+		}
+
+		.error {
+			display: none !important;
+		}
+
+		#forgotPassword {
+			position: absolute;
+			font-size: 14px;
+			bottom: -20px;
+			right: 0px;
+			display: none; /*inline*/
+			text-decoration: none;
+			color: #38A6D3;
+		}
+
+		#forgetPassword:hover {
+			color: #2A82A5;
+		}
+
+		@keyframes login_error {
+			0% {
+				transform: translateX(0%);
+			}
+
+			20% {
+				transform: translateX(10%);
+			}
+
+			40% {
+				transform: translateX(-10%);
+			}
+
+			60% {
+				transform: translateX(5%);
+			}
+
+			80% {
+				transform: translateX(-5%);
+			}
+			
+			100% {
+				transform: translateX(0%);
+			}
+
+		}
+
+		@media screen and (max-width: 1000px) {
+			.logoBox {
+				display: none;
+			}
+
+			.loginBox {
+				width: 100%;
+			}
+
+			.container {
+				flex-flow: column nowrap;
+			}
+
+			footer {
+				display: block;
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			.container {
+				width: 100%;
+			}
+
+			.loginBox {
+				width: 100%;
+			}
+
+			#api {
+				width: 96%;
+				max-width: 100%;
+				padding: 30px 0px;
+			}
+		}
+	</style>
+</body>
+
+</html>
